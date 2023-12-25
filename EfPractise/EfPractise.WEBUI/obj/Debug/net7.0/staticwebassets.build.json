@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "xvhgM23P/CNL+62EHM/lQiO7AZeoXu8BmKqezkykXZI=",
+  "Source": "EfPractise.WEBUI",
+  "BasePath": "_content/EfPractise.WEBUI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EfPractise.WEBUI\\wwwroot",
+      "Source": "EfPractise.WEBUI",
+      "ContentRoot": "D:\\Github\\WebApiBestPRactise\\EfPractise\\EfPractise.WEBUI\\wwwroot\\",
+      "BasePath": "_content/EfPractise.WEBUI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
