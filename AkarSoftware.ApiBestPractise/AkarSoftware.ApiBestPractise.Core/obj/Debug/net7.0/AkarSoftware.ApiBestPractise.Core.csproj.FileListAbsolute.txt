@@ -1,0 +1,12 @@
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\bin\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.deps.json
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\bin\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\bin\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.pdb
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.AssemblyInfoInputs.cache
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.AssemblyInfo.cs
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.csproj.CoreCompileInputs.cache
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.sourcelink.json
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\refint\AkarSoftware.ApiBestPractise.Core.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Core.pdb
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Core\obj\Debug\net7.0\ref\AkarSoftware.ApiBestPractise.Core.dll

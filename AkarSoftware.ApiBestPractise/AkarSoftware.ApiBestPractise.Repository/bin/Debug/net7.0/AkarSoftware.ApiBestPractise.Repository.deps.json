@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "AkarSoftware.ApiBestPractise.Repository/1.0.0": {
+        "dependencies": {
+          "AkarSoftware.ApiBestPractise.Core": "1.0.0"
+        },
+        "runtime": {
+          "AkarSoftware.ApiBestPractise.Repository.dll": {}
+        }
+      },
+      "AkarSoftware.ApiBestPractise.Core/1.0.0": {
+        "runtime": {
+          "AkarSoftware.ApiBestPractise.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AkarSoftware.ApiBestPractise.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AkarSoftware.ApiBestPractise.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

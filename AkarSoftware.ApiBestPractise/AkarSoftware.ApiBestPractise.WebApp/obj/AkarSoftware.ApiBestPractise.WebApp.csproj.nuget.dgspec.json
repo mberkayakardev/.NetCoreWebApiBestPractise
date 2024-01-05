@@ -1,0 +1,263 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.WebApp\\AkarSoftware.ApiBestPractise.WebApp.csproj": {}
+  },
+  "projects": {
+    "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Core\\AkarSoftware.ApiBestPractise.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Core\\AkarSoftware.ApiBestPractise.Core.csproj",
+        "projectName": "AkarSoftware.ApiBestPractise.Core",
+        "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Core\\AkarSoftware.ApiBestPractise.Core.csproj",
+        "packagesPath": "C:\\Users\\Muhammed Berkay AKAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Muhammed Berkay AKAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Repository\\AkarSoftware.ApiBestPractise.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Repository\\AkarSoftware.ApiBestPractise.Repository.csproj",
+        "projectName": "AkarSoftware.ApiBestPractise.Repository",
+        "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Repository\\AkarSoftware.ApiBestPractise.Repository.csproj",
+        "packagesPath": "C:\\Users\\Muhammed Berkay AKAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Muhammed Berkay AKAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Core\\AkarSoftware.ApiBestPractise.Core.csproj": {
+                "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Core\\AkarSoftware.ApiBestPractise.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Services\\AkarSoftware.ApiBestPractise.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Services\\AkarSoftware.ApiBestPractise.Services.csproj",
+        "projectName": "AkarSoftware.ApiBestPractise.Services",
+        "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Services\\AkarSoftware.ApiBestPractise.Services.csproj",
+        "packagesPath": "C:\\Users\\Muhammed Berkay AKAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Muhammed Berkay AKAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Repository\\AkarSoftware.ApiBestPractise.Repository.csproj": {
+                "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Repository\\AkarSoftware.ApiBestPractise.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.WebApp\\AkarSoftware.ApiBestPractise.WebApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.WebApp\\AkarSoftware.ApiBestPractise.WebApp.csproj",
+        "projectName": "AkarSoftware.ApiBestPractise.WebApp",
+        "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.WebApp\\AkarSoftware.ApiBestPractise.WebApp.csproj",
+        "packagesPath": "C:\\Users\\Muhammed Berkay AKAR\\.nuget\\packages\\",
+        "outputPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.WebApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Muhammed Berkay AKAR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Services\\AkarSoftware.ApiBestPractise.Services.csproj": {
+                "projectPath": "D:\\Github\\.NetCoreWebApiBestPractise\\AkarSoftware.ApiBestPractise\\AkarSoftware.ApiBestPractise.Services\\AkarSoftware.ApiBestPractise.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoftware.ApiBestPractise.Core", "AkarSoftware.ApiBestPractise.Core\AkarSoftware.ApiBestPractise.Core.csproj", "{6FDAD94D-A6DE-4A3F-AB55-4B35B8F9601F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoftware.ApiBestPractise.Repository", "AkarSoftware.ApiBestPractise.Repository\AkarSoftware.ApiBestPractise.Repository.csproj", "{24B3338C-841C-4B58-B1AB-15684A675516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoftware.ApiBestPractise.Services", "AkarSoftware.ApiBestPractise.Services\AkarSoftware.ApiBestPractise.Services.csproj", "{2EC03197-6CD4-4950-AA58-DA61C2138A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoftware.ApiBestPractise.API", "AkarSoftware.ApiBestPractise.API\AkarSoftware.ApiBestPractise.API.csproj", "{F34EDE2A-6F45-4B39-883F-BDAEE496B7E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoftware.ApiBestPractise.WebApp", "AkarSoftware.ApiBestPractise.WebApp\AkarSoftware.ApiBestPractise.WebApp.csproj", "{FA6A8D81-97E7-4354-92C3-E82108E1F0AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkarSoftware.ApiBestPractise.Caching", "AkarSoftware.ApiBestPractise.Caching\AkarSoftware.ApiBestPractise.Caching.csproj", "{499AA438-B811-44BB-B06C-CBFF118F31C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{58567CE8-8716-477E-A238-BFD87E0E3097}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FDAD94D-A6DE-4A3F-AB55-4B35B8F9601F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDAD94D-A6DE-4A3F-AB55-4B35B8F9601F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDAD94D-A6DE-4A3F-AB55-4B35B8F9601F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDAD94D-A6DE-4A3F-AB55-4B35B8F9601F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B3338C-841C-4B58-B1AB-15684A675516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B3338C-841C-4B58-B1AB-15684A675516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B3338C-841C-4B58-B1AB-15684A675516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B3338C-841C-4B58-B1AB-15684A675516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC03197-6CD4-4950-AA58-DA61C2138A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC03197-6CD4-4950-AA58-DA61C2138A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC03197-6CD4-4950-AA58-DA61C2138A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC03197-6CD4-4950-AA58-DA61C2138A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F34EDE2A-6F45-4B39-883F-BDAEE496B7E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34EDE2A-6F45-4B39-883F-BDAEE496B7E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34EDE2A-6F45-4B39-883F-BDAEE496B7E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34EDE2A-6F45-4B39-883F-BDAEE496B7E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6A8D81-97E7-4354-92C3-E82108E1F0AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6A8D81-97E7-4354-92C3-E82108E1F0AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6A8D81-97E7-4354-92C3-E82108E1F0AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6A8D81-97E7-4354-92C3-E82108E1F0AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{499AA438-B811-44BB-B06C-CBFF118F31C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{499AA438-B811-44BB-B06C-CBFF118F31C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{499AA438-B811-44BB-B06C-CBFF118F31C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{499AA438-B811-44BB-B06C-CBFF118F31C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61B7889C-CF9E-4816-BFAF-6C53894B0104}
+	EndGlobalSection
+EndGlobal

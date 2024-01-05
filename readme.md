@@ -1,20 +1,60 @@
-<h1> <center> Web Api Best Practise </center></h1> 
-<hr>
-<p> Bu alanda .Net Core Web Api kullanılarak Best Practiselere uygun bir şekilde katmanlı mimaride bir api uygulaması yazılmıştır. </p>
-<br>
-<h3> Kullanılan teknolojiler </h3>
-<br>
-<ul>
-  <li> .Net Core Web Api </li>
-  <li> .Net Core 7.0 </li>
-  <li> .Net Core MVC Web App </li>
-  <li> Auto Mapper </li>
-  <li> Fluent Api </li>
-  <li> Unit Of Work </li>
-  <li> Repository Desing Pattern </li>
-</ul>
-<br>
-<p> Kullanılmıştır </p>
-<hr>
+<a name="readme-top"></a>
 
-![alt text](https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/Architecture.png)
+
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+
+<div align="center">
+  <h3 align="center"> Web Api Best Practise </h3>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Açıklama</summary>
+  <ol>
+    <li>
+      <a href="#Proje-Hakkinda">Proje Hakkında</a>
+    </li>
+    <li>
+      <a href="#teknolojiler">Kullanılan Teknolojiler </a>
+    </li>
+      </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+<h2 id="Proje-Hakkinda"> Proje Hakkında </h2>
+
+ <img src ="https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/Architecture.png?raw=true" >
+ 
+ 
+
+* Uygulama Asp.Net Core Web Api ile Restfull Geliştirme yapılmasını ve bu api nin Asp.Net Core MVC tarafından tüketilmesini baz alan bir uygulamadır
+
+
+<p align="right">(<a href="#readme-top">başa dön</a>)</p>
+
+
+<h2 id="teknolojiler"> Kullanılan Teknolojiler </id>
+
+* .Net 7.0
+* .Net 7.0 Web Api
+* .Net 7.0 MVC
+* N-Tier Achitecture - (Çok katmanlı mimari)
+* Unit Of Work
+* Generic Repository
+* AutoMapper
+* Fluent Api
+* Fluent Validaton
+* Costume Filters
+* Entity Framework Core (Code first)
+* Html  
+* CSS  
+* Bootstrap
+* İn-Memory Cache
