@@ -8,16 +8,15 @@ namespace AkarSoftware.ApiBestPractise.Core.Repositories
     public interface IGenericRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int id); // Task ile asenkroinik bir method olması sağlandı gerite T dönülecek
+        IQueryable<T> GetAll (Expression<Func<T, bool>> expression); // IEnumerable dönmememizin sebebi ise order by vs gibi yapılar kullanabiliriz bu istekle yapılmıştır. 
         IQueryable<T> Where(Expression<Func<T,bool>> expression); // (Where sorgusu olabilir) IQueryasble Yazmış olduğun sorgular direk veritabanına gitmez.
-                                                                  // yazılan sorgunun veritabanına gitmesi için IEnumerble çağırman gerekir.  
-        Task AddAsync(T entity);
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression); // Any ile böyle bir kayıt varmı yokmu onu gözlemleriz.
+        Task AddAsync(T entity);
+        Task AddRangeAsync(IEnumerable<T> Entities); // interface almamamız önemli soyut nesneler ile çalışınız. bunu IEnumerable interface ini implemente etmiş değerlere cast edebilmek için 
         void Update (T entity);
         void Delete (T entity);
-        void AddRange(IEnumerable<T> Entities); // interface almamamız önemli soyut nesneler ile çalışınız. bunu IEnumerable interface ini implemente etmiş değerlere cast edebilmek için 
         void RemoveRange(IEnumerable<T> Entitites);
-        IQueryable<T> GetAll (Expression<Func<T, bool>> expression); // IEnumerable dönmememizin sebebi ise order by vs gibi yapılar kullanabiliriz bu istekle yapılmıştır. 
-
+        
         // IQueryable ile where gibi sorgusu olabilir geriye bir Iqueryable dönerim.
         // IQueryable ile yazılan sorgular veritabanına gitmez, tolist, tolist async gibi methodlar ile veritabanına gidebilir
         // where ile yazılan sorgu içerisinde daha komplex sorgular için daha performanslı çalışabilirim.
