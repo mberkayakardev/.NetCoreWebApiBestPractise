@@ -8,7 +8,7 @@ namespace AkarSoftware.ApiBestPractise.Core.Repositories
     public interface IGenericRepository<T> where T : class
     {
         Task<T> GetByIdAsync(int id); // Task ile asenkroinik bir method olması sağlandı gerite T dönülecek
-        IQueryable<T> GetAll (Expression<Func<T, bool>> expression); // IEnumerable dönmememizin sebebi ise order by vs gibi yapılar kullanabiliriz bu istekle yapılmıştır. 
+        Task<IEnumerable<T>> GetAllAsync (); // IEnumerable dönmememizin sebebi ise order by vs gibi yapılar kullanabiliriz bu istekle yapılmıştır. 
         IQueryable<T> Where(Expression<Func<T,bool>> expression); // (Where sorgusu olabilir) IQueryasble Yazmış olduğun sorgular direk veritabanına gitmez.
         Task<bool> AnyAsync(Expression<Func<T, bool>> expression); // Any ile böyle bir kayıt varmı yokmu onu gözlemleriz.
         Task AddAsync(T entity);

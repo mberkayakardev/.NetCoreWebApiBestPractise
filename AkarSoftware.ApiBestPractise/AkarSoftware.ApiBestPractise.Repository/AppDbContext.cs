@@ -1,4 +1,4 @@
-﻿using AkarSoftware.ApiBestPractise.Core;
+﻿using AkarSoftware.ApiBestPractise.Core.Entities;
 using AkarSoftware.ApiBestPractise.Repository.Configuration;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -18,6 +18,26 @@ namespace AkarSoftware.ApiBestPractise.Repository
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             modelBuilder.ApplyConfiguration(new ProductConfiguration());
             base.OnModelCreating(modelBuilder); 
+        }
+
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            foreach (var item in ChangeTracker.Entries())
+            {
+                if (item.Entity is BaseEntity EntityReference)
+                {
+                    EntityReference.UpdatedDate = DateTime.Now;
+                    switch (item.State)
+                    {
+                        case EntityState.Added:
+                            EntityReference.CreatedDate = DateTime.Now;
+                            break;
+                    }
+
+                }
+
+            }
+            return base.SaveChangesAsync(cancellationToken);
         }
 
         // Her bir entity e karşılık bir DbSet Oluşturulacaktır. 

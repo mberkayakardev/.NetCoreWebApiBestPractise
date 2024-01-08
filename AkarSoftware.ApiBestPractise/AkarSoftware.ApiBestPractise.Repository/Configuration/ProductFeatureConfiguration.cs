@@ -1,4 +1,4 @@
-﻿using AkarSoftware.ApiBestPractise.Core;
+﻿using AkarSoftware.ApiBestPractise.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

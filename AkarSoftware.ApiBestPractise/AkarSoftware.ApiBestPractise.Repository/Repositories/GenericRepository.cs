@@ -47,9 +47,9 @@ namespace AkarSoftware.ApiBestPractise.Repository.Repositories
         // GetAll Methodu IQueryAble döner. Dbsest üzerinden asnotracikng ile takipi önledik.
         // Queryable ile data üzerinde ilgii sorgularumuzu çevirebilmek için
         // EF Core çekmiş olduğu dataları track etmesin Anlık olarak durumlarını izlemesin diye bu şekilde bir işlem yapıldı. 
-        public IQueryable<T> GetAll(Expression<Func<T, bool>> expression)
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return _Entity.AsNoTracking().AsQueryable();
+            return await _Entity.AsNoTracking().ToListAsync();
         }
 
         // findasync bir primary key beklenir

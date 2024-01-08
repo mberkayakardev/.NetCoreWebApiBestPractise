@@ -14,3 +14,5 @@ D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.A
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Repository\obj\Debug\net7.0\refint\AkarSoftware.ApiBestPractise.Repository.dll
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Repository\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Repository.pdb
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Repository\obj\Debug\net7.0\ref\AkarSoftware.ApiBestPractise.Repository.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Repository\bin\Debug\net7.0\AkarSoftware.ApiBestPractise.Repository.runtimeconfig.json
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.Repository\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.Repository.genruntimeconfig.cache
