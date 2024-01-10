@@ -49,9 +49,9 @@
 * .Net 7.0 Web Api
 * .Net 7.0 MVC
 * N-Tier Achitecture - (Çok katmanlı mimari)
-* Unit Of Work
 * Generic Repository
 * AutoMapper
+* AutoFac
 * Fluent Api
 * Fluent Validaton
 * Costume Filters

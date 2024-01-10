@@ -82,3 +82,5 @@ D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.A
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\bin\Debug\net7.0\Mono.TextTemplating.dll
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\bin\Debug\net7.0\System.CodeDom.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\bin\Debug\net7.0\AutoMapper.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

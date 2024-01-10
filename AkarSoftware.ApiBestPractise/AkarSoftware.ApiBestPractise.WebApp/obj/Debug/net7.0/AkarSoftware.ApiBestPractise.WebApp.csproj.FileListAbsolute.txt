@@ -70,3 +70,5 @@ D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.A
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.WebApp\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.WebApp.csproj.CopyComplete
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.WebApp\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.WebApp.genruntimeconfig.cache
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.WebApp\obj\Debug\net7.0\ref\AkarSoftware.ApiBestPractise.WebApp.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.WebApp\bin\Debug\net7.0\AutoMapper.dll
+D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.WebApp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

@@ -1,18 +1,25 @@
-﻿using AkarSoftware.ApiBestPractise.Core.Repositories;
+﻿using AkarSoftware.ApiBestPractise.API.Helpers;
+using AkarSoftware.ApiBestPractise.Core.Repositories;
 using AkarSoftware.ApiBestPractise.Core.Services;
 using AkarSoftware.ApiBestPractise.Core.UnitOfWorks;
 using AkarSoftware.ApiBestPractise.Repository;
 using AkarSoftware.ApiBestPractise.Repository.Repositories;
 using AkarSoftware.ApiBestPractise.Repository.UnitOfWork;
+using AkarSoftware.ApiBestPractise.Services.MappingProfiles;
 using AkarSoftware.ApiBestPractise.Services.Services;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddMvcOptions(opt =>
+{
+    opt.Conventions.Add(new LowercaseControllerModelConvention());
+});
 
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
@@ -27,7 +34,12 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>))); // generic olarak tek tip alındığı için böyle eğer birden fazla generic alınsaydı <,,,> şeklinde parametre -1 kadar virgül atılacaktı
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
+builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
+builder.Services.AddAutoMapper(typeof(CategoryMappingProfile));
+builder.Services.AddAutoMapper(typeof(ProductFeatureMappingProfile));
+
 #endregion
 
 

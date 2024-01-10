@@ -33,9 +33,7 @@ namespace AkarSoftware.ApiBestPractise.Repository
                             EntityReference.CreatedDate = DateTime.Now;
                             break;
                     }
-
                 }
-
             }
             return base.SaveChangesAsync(cancellationToken);
         }

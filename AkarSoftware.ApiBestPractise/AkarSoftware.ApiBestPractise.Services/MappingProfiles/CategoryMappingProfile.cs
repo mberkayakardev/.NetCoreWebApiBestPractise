@@ -4,7 +4,7 @@ using AutoMapper;
 
 namespace AkarSoftware.ApiBestPractise.Services.MappingProfiles
 {
-    internal class CategoryMappingProfile : Profile
+    public class CategoryMappingProfile : Profile
     {
         public CategoryMappingProfile()
         {
