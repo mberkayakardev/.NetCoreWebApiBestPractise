@@ -50,22 +50,22 @@ namespace AkarSoftware.ApiBestPractise.Repository.Migrations
                         {
                             Id = 1,
                             CategoryName = "Kalemler",
-                            CreatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5472),
-                            UpdatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5487)
+                            CreatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(258),
+                            UpdatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(273)
                         },
                         new
                         {
                             Id = 2,
                             CategoryName = "Kitaplar",
-                            CreatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5489),
-                            UpdatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5489)
+                            CreatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(275),
+                            UpdatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(276)
                         },
                         new
                         {
                             Id = 3,
                             CategoryName = "Defterler",
-                            CreatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5490),
-                            UpdatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5491)
+                            CreatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(277),
+                            UpdatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(277)
                         });
                 });
 
@@ -109,31 +109,31 @@ namespace AkarSoftware.ApiBestPractise.Repository.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5709),
+                            CreatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(447),
                             Name = "Kalem1",
                             Price = 100m,
                             Stock = 20,
-                            UpdatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5710)
+                            UpdatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(448)
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 2,
-                            CreatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5715),
+                            CreatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(452),
                             Name = "Kalem2",
                             Price = 150m,
                             Stock = 120,
-                            UpdatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5715)
+                            UpdatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(452)
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 3,
-                            CreatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5717),
+                            CreatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(454),
                             Name = "Kalem3",
                             Price = 150m,
                             Stock = 120,
-                            UpdatedDate = new DateTime(2024, 1, 10, 4, 52, 47, 6, DateTimeKind.Local).AddTicks(5717)
+                            UpdatedDate = new DateTime(2024, 1, 16, 1, 45, 14, 318, DateTimeKind.Local).AddTicks(454)
                         });
                 });
 

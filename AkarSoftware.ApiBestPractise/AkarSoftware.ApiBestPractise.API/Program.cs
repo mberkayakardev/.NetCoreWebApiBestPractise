@@ -9,7 +9,6 @@ using AkarSoftware.ApiBestPractise.Services.MappingProfiles;
 using AkarSoftware.ApiBestPractise.Services.Services;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -35,6 +34,10 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>))); // generic olarak tek tip alındığı için böyle eğer birden fazla generic alınsaydı <,,,> şeklinde parametre -1 kadar virgül atılacaktı
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IProductService, ProductServices>();
+builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+
 
 builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
 builder.Services.AddAutoMapper(typeof(CategoryMappingProfile));
@@ -44,7 +47,6 @@ builder.Services.AddAutoMapper(typeof(ProductFeatureMappingProfile));
 
 
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

@@ -9,6 +9,8 @@ namespace AkarSoftware.ApiBestPractise.Services.MappingProfiles
         public ProductMappingProfile()
         {
             CreateMap<ProductDTO, Product>().ReverseMap();
+            CreateMap<Product, ProductWithCategoryDto>(); // iki yönlü map olmayacak
+
         }
     }
 }

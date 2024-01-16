@@ -10,10 +10,12 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IService<Product> _ProductService;
-        public ProductsController(IMapper mapper, IService<Product> productService)
+        private readonly IProductService _productServiceCostume;
+        public ProductsController(IMapper mapper, IService<Product> productService, IProductService productServiceCostume)
         {
             _mapper = mapper;
             _ProductService = productService;
+            _productServiceCostume = productServiceCostume;
         }
 
         // host/api/productss
@@ -24,6 +26,23 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
             var ProductDtos = _mapper.Map<List<ProductDTO>>(result.ToList());  
             return CreateActionResult(CostumeResponseDto<List<ProductDTO>>.SuccessResult(200, ProductDtos));
         }
+
+        // host/api/products/category
+        [HttpGet("category")]
+        public async Task<IActionResult> GetAllWithCategory()
+        {
+            var result = await _productServiceCostume.GetListProductsWithCategories();
+            return CreateActionResult(result);
+        }
+
+        // host/api/products/5/category
+        [HttpGet("{id}/Category")]
+        public async Task<IActionResult> GetAllWithCategory(int id)
+        {
+            var result = await _productServiceCostume.GetProductsWithCategory(id);
+            return CreateActionResult(result);
+        }
+
 
         // id şeklide bu şekilde belirtirsek query string değil parametreden alacağımızı belirtrizi host/api/products/3 gibi bir istek yapılmaı
         // id yi belirtmezsek query string ten bekler. süslü parantez ile belirtirsek burayı bir route olarak algılayacaktır. 

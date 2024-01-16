@@ -11,17 +11,16 @@ namespace AkarSoftware.ApiBestPractise.Repository.Repositories
             
         }
 
-        public async Task<List<Product>> GetListProductsWithCategories()
+        public async Task<List<Product>> GetListProductsWithCategoriesAsync() // EagerLoading
         {
             var query = await _appDbContext.Products.Include(x => x.Category).ToListAsync();
             return query;
         }
 
-        public async Task<Product> GetProductsWithCategory(int id)
+        public async Task<Product> GetProductsWithCategoryAsync(int id)  // EagerLoading
         {
             var query = await _appDbContext.Products.Include(x=> x.Category).FirstOrDefaultAsync(x=> x.Id == id);
             return query;
-                 
         }
     }
 }

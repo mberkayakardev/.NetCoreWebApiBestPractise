@@ -15,7 +15,7 @@ namespace AkarSoftware.ApiBestPractise.Services.Services
         // farklı repolar ile çağırırken tüm değişiklikleri bir transaction şeklinde db ye yansıtsın ve hata varsa tüm işlemleri otomatik olarak RollBack yapması için bu şekilde yürütülmektedir. 
 
         private readonly IGenericRepository<T> _repository;
-        private readonly IUnitOfWork _unitOfWork;
+        protected readonly IUnitOfWork _unitOfWork;
         public Service(IGenericRepository<T> repository, IUnitOfWork unitOfWork)
         {
             _repository = repository;

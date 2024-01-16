@@ -21,7 +21,6 @@ D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.A
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.API.AssemblyInfoInputs.cache
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.API.AssemblyInfo.cs
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.API.csproj.CoreCompileInputs.cache
-D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.API.MvcApplicationPartsAssemblyInfo.cs
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.API.MvcApplicationPartsAssemblyInfo.cache
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\AkarSoftware.ApiBestPractise.API.sourcelink.json
 D:\Github\.NetCoreWebApiBestPractise\AkarSoftware.ApiBestPractise\AkarSoftware.ApiBestPractise.API\obj\Debug\net7.0\staticwebassets.build.json

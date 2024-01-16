@@ -9,6 +9,8 @@ namespace AkarSoftware.ApiBestPractise.Services.MappingProfiles
         public CategoryMappingProfile()
         {
             CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<Category, CategoryWithProductsDto>();
+
 
         }
     }

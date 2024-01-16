@@ -31,9 +31,9 @@
 <!-- ABOUT THE PROJECT -->
 <h2 id="Proje-Hakkinda"> Proje Hakkında </h2>
 
- <img src ="https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/Architecture.png?raw=true" >
-  <img src ="https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/image1.png?raw=true" >
- 
+<img src ="https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/Architecture.png?raw=true" >
+<img src ="https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/image1.png?raw=true" >
+<img src ="https://github.com/mberkayakardev/.NetCoreWebApiBestPractise/blob/master/endpointlist.png?raw=true" >
  
 
 * Uygulama Asp.Net Core Web Api ile Restfull Geliştirme yapılmasını ve bu api nin Asp.Net Core MVC tarafından tüketilmesini baz alan bir uygulamadır
