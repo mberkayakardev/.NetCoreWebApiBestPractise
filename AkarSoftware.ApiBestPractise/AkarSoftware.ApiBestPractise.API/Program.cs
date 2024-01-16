@@ -1,4 +1,7 @@
-﻿using AkarSoftware.ApiBestPractise.API.Helpers;
+﻿using AkarSoftware.ApiBestPractise.API.Filters;
+using AkarSoftware.ApiBestPractise.API.Helpers;
+using AkarSoftware.ApiBestPractise.API.Middlewares;
+using AkarSoftware.ApiBestPractise.API.Modules;
 using AkarSoftware.ApiBestPractise.Core.Repositories;
 using AkarSoftware.ApiBestPractise.Core.Services;
 using AkarSoftware.ApiBestPractise.Core.UnitOfWorks;
@@ -7,18 +10,35 @@ using AkarSoftware.ApiBestPractise.Repository.Repositories;
 using AkarSoftware.ApiBestPractise.Repository.UnitOfWork;
 using AkarSoftware.ApiBestPractise.Services.MappingProfiles;
 using AkarSoftware.ApiBestPractise.Services.Services;
+using AkarSoftware.ApiBestPractise.Services.Validations;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
 using AutoMapper;
+using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Framework ün belirlemiş olduğu model bu şekilde baskılandı. 
 
-builder.Services.AddControllers().AddMvcOptions(opt =>
+builder.Services.AddControllers(x =>
+{
+    x.Filters.Add(new ValidateFilterAttribute());
+})
+
+    .AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<ProductDtoValidator>())
+    .AddMvcOptions(opt =>
 {
     opt.Conventions.Add(new LowercaseControllerModelConvention());
 });
+builder.Services.Configure<ApiBehaviorOptions>(opt =>
+{
+    opt.SuppressModelStateInvalidFilter = true;
+});
+
 
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
@@ -29,19 +49,10 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 });
 
 
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(x => x.RegisterModule(new RepoServiceModule()));
 #region Services Register
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped(typeof(IGenericRepository<>), (typeof(GenericRepository<>))); // generic olarak tek tip alındığı için böyle eğer birden fazla generic alınsaydı <,,,> şeklinde parametre -1 kadar virgül atılacaktı
-builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductServices>();
-builder.Services.AddScoped<ICategoryRepository,CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
 
-
-builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
-builder.Services.AddAutoMapper(typeof(CategoryMappingProfile));
-builder.Services.AddAutoMapper(typeof(ProductFeatureMappingProfile));
 
 #endregion
 
@@ -60,6 +71,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCostumeException();
 
 app.UseAuthorization();
 

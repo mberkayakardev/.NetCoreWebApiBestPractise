@@ -1,9 +1,9 @@
-﻿using AkarSoftware.ApiBestPractise.Core.Services;
+﻿using AkarSoftware.ApiBestPractise.API.Filters;
+using AkarSoftware.ApiBestPractise.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AkarSoftware.ApiBestPractise.API.Controllers
 {
-
     public class CategoriesController : CostumeBaseController 
         // Route ve Api controller i içerisinde barındıran base controller aynı zamanda Costume dönüşte mevcut
     {

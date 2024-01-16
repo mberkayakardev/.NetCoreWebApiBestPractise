@@ -9,12 +9,10 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
     public class ProductsController : CostumeBaseController
     {
         private readonly IMapper _mapper;
-        private readonly IService<Product> _ProductService;
         private readonly IProductService _productServiceCostume;
         public ProductsController(IMapper mapper, IService<Product> productService, IProductService productServiceCostume)
         {
             _mapper = mapper;
-            _ProductService = productService;
             _productServiceCostume = productServiceCostume;
         }
 
@@ -22,7 +20,7 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
         [HttpGet]
         public async Task<IActionResult> All()
         {
-            var result = await _ProductService.GetAllAsync();  
+            var result = await _productServiceCostume.GetAllAsync();  
             var ProductDtos = _mapper.Map<List<ProductDTO>>(result.ToList());  
             return CreateActionResult(CostumeResponseDto<List<ProductDTO>>.SuccessResult(200, ProductDtos));
         }
@@ -49,7 +47,7 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var result = await _ProductService.GetByIdAsync(id);
+            var result = await _productServiceCostume.GetByIdAsync(id);
             var ProductDtos = _mapper.Map<ProductDTO>(result);
             return CreateActionResult(CostumeResponseDto<ProductDTO>.SuccessResult(200, ProductDtos));
         }
@@ -58,7 +56,7 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
         public async Task<IActionResult> CreateProduct(ProductDTO productDTO)
         {
             var Model = _mapper.Map<Product>(productDTO);
-            var result = await _ProductService.AddAsync(Model);
+            var result = await _productServiceCostume.AddAsync(Model);
             var resultmodel = _mapper.Map<ProductDTO>(result);
             return CreateActionResult(CostumeResponseDto<ProductDTO>.SuccessResult(201, resultmodel));
 
@@ -70,7 +68,7 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
         public async Task<IActionResult> UpdateProduct(ProductDTO productDTO)
         {
             var Model = _mapper.Map<Product>(productDTO);
-            await _ProductService.Update(Model);
+            await _productServiceCostume.Update(Model);
             return CreateActionResult(CostumeResponseDto<NoContentDto>.SuccessResult(204));
 
             // Hatırlanacağı üzere bizler kullanıcıdan Dto alıyoruz bu dto yu model e mapledikten sone yine model i değil sadece ve sadece DTO dönmemiz gerekiyor.
@@ -80,8 +78,8 @@ namespace AkarSoftware.ApiBestPractise.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Remove(int id)
         {
-            var model = await _ProductService.GetByIdAsync(id);
-            await _ProductService.Delete(model);
+            var model = await _productServiceCostume.GetByIdAsync(id);
+            await _productServiceCostume.Delete(model);
             return CreateActionResult(CostumeResponseDto<NoContentDto>.SuccessResult(204));
 
         }
