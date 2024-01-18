@@ -55,6 +55,7 @@
 * Fluent Api
 * Fluent Validaton
 * Costume Filters
+* Costume Exceptions
 * Entity Framework Core (Code first)
 * Html  
 * CSS  

@@ -15,19 +15,25 @@ namespace AkarSoftware.ApiBestPractise.API.Modules
     {
         protected override void Load(ContainerBuilder builder)
         {
+            builder.RegisterGeneric(typeof(GenericRepository<>)).As(typeof(IGenericRepository<>)).InstancePerLifetimeScope();
+            builder.RegisterGeneric(typeof(Service<>)).As(typeof(IService<>)).InstancePerLifetimeScope();
 
-            builder.RegisterGeneric(typeof(GenericRepository<>)).As(typeof(IGenericRepository<>)).InstancePerMatchingLifetimeScope();
-            builder.RegisterGeneric(typeof(Service<>)).As(typeof(IService<>)).InstancePerMatchingLifetimeScope();
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>();
 
 
-            var ApiAssembly = Assembly.GetExecutingAssembly();
-            var RepoAssembly = Assembly.GetAssembly(typeof(AppDbContext));
-            var ServicesAssembly = Assembly.GetAssembly(typeof(ProductMappingProfile));
+            var apiAssembly = Assembly.GetExecutingAssembly();
+            var repoAssembly = Assembly.GetAssembly(typeof(AppDbContext));
+            var serviceAssembly = Assembly.GetAssembly(typeof(ProductMappingProfile));
+
+            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
+            builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
 
 
-            builder.RegisterAssemblyTypes(ApiAssembly, RepoAssembly, ServicesAssembly).Where(x => x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerMatchingLifetimeScope();
-            builder.RegisterAssemblyTypes(ApiAssembly, RepoAssembly, ServicesAssembly).Where(x => x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerMatchingLifetimeScope();
+
+
+
+
+
 
 
 

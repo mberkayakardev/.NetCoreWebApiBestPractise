@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AkarSoftware.ApiBestPractise.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+be2963edf87ff01bfe46eff0e695d4267fdad50a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2af467ddaee4d2f0c031f6075d3f653b084c6b3a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AkarSoftware.ApiBestPractise.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AkarSoftware.ApiBestPractise.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

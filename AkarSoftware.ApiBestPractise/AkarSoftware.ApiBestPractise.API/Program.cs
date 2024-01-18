@@ -2,14 +2,8 @@
 using AkarSoftware.ApiBestPractise.API.Helpers;
 using AkarSoftware.ApiBestPractise.API.Middlewares;
 using AkarSoftware.ApiBestPractise.API.Modules;
-using AkarSoftware.ApiBestPractise.Core.Repositories;
-using AkarSoftware.ApiBestPractise.Core.Services;
-using AkarSoftware.ApiBestPractise.Core.UnitOfWorks;
 using AkarSoftware.ApiBestPractise.Repository;
-using AkarSoftware.ApiBestPractise.Repository.Repositories;
-using AkarSoftware.ApiBestPractise.Repository.UnitOfWork;
 using AkarSoftware.ApiBestPractise.Services.MappingProfiles;
-using AkarSoftware.ApiBestPractise.Services.Services;
 using AkarSoftware.ApiBestPractise.Services.Validations;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
@@ -34,6 +28,12 @@ builder.Services.AddControllers(x =>
 {
     opt.Conventions.Add(new LowercaseControllerModelConvention());
 });
+
+builder.Services.AddAutoMapper(typeof(ProductMappingProfile));
+builder.Services.AddAutoMapper(typeof(CategoryMappingProfile));
+builder.Services.AddAutoMapper(typeof(ProductFeatureMappingProfile));
+
+
 builder.Services.Configure<ApiBehaviorOptions>(opt =>
 {
     opt.SuppressModelStateInvalidFilter = true;
@@ -49,8 +49,10 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 });
 
 
-builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
-builder.Host.ConfigureContainer<ContainerBuilder>(x => x.RegisterModule(new RepoServiceModule()));
+builder.Host.UseServiceProviderFactory
+    (new AutofacServiceProviderFactory());
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new RepoServiceModule()));
+
 #region Services Register
 
 
